@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Button,Card, Header, Form, Input, Icon } from "semantic-ui-react";
+import { Button, Card, Header, Form, Input, Icon } from "semantic-ui-react";
 
 let endpoint = "http://localhost:8080";
 
@@ -25,8 +25,9 @@ class ToDoList extends Component {
   };
 
   onSubmit = () => {
+
     let { task } = this.state;
-    // console.log("pRINTING task", this.state.task);
+    
     if (task) {
       axios
         .post(
@@ -45,7 +46,7 @@ class ToDoList extends Component {
           this.setState({
             task: "",
           });
-          console.log(res);
+
         });
     }
   };
@@ -162,7 +163,7 @@ class ToDoList extends Component {
               fluid
               placeholder="Create Task"
             />
-            <Button >Create Task</Button>
+            <Button>Create Task</Button>
           </Form>
         </div>
         <div className="row">

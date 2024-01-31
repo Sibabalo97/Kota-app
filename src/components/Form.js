@@ -13,8 +13,7 @@ function Form(props) {
     props.addTask(name);
     setName("");
 
-      const newTask = { id: `todo-${nanoid()}`, name, completed: false };
-      
+    const newTask = { id: `todo-${nanoid()}`, name, completed: false };
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -35,7 +34,7 @@ function Form(props) {
       <button type="submit" className="btn btn__primary btn__lg">
         Add
       </button>
-    </form> 
+    </form>
   );
 }
 

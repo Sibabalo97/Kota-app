@@ -1,11 +1,9 @@
-
-import FilterButton from '../components/FilterButton';
-import Form from '../components/Form';
+import FilterButton from "../components/FilterButton";
+import Form from "../components/Form";
 import Todo from "../components/Todo";
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
-import './Dashboard.css';
-
+import "./Dashboard.css";
 
 const FILTER_MAP = {
   All: () => true,
@@ -16,15 +14,9 @@ const FILTER_MAP = {
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function Dashboard(props) {
-
   const [filter, setFilter] = useState("All");
-
-
   const [tasks, setTasks] = useState(props.tasks || []);
 
-  
-
- 
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
     setTasks([...tasks, newTask]);
@@ -45,7 +37,7 @@ function Dashboard(props) {
 
   function deleteTask(id) {
     const remainingTasks = tasks.filter((task) => id !== task.id);
-  setTasks(remainingTasks);
+    setTasks(remainingTasks);
   }
 
   function editTask(id, newName) {
@@ -59,7 +51,7 @@ function Dashboard(props) {
     });
     setTasks(editedTaskList);
   }
-  
+
   const taskList = tasks.map((task) => (
     <Todo
       id={task.id}
@@ -68,7 +60,7 @@ function Dashboard(props) {
       key={task.id}
       toggleTaskCompleted={toggleTaskCompleted}
       deleteTask={deleteTask}
-      editTask ={editTask}
+      editTask={editTask}
     />
   ));
 
@@ -80,26 +72,21 @@ function Dashboard(props) {
       setFilter={setFilter}
     />
   ));
-  
-  
 
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
-  
 
   return (
     <div className="todoapp stack-large">
       <h1>Spaza Eats Kota Shop</h1>
       <Form addTask={addTask} />
-      <div className="filters btn-group stack-exception">
-      {filterList}
-
-      </div>
+      <div className="filters btn-group stack-exception">{filterList}</div>
       <h2 id="list-heading">{headingText}</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
-        aria-labelledby="list-heading">
+        aria-labelledby="list-heading"
+      >
         {taskList}
       </ul>
 

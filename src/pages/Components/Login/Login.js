@@ -14,9 +14,6 @@ function Login() {
         username,
         password,
       });
-
-      console.log(response.data); 
-      
     } catch (error) {
       console.error('Login failed', error.message);
       setError('Invalid username or password'); 
