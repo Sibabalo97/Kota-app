@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { nanoid } from "nanoid";
+
 
 function Form(props) {
   const [name, setName] = useState("");
@@ -13,7 +13,6 @@ function Form(props) {
     props.addTask(name);
     setName("");
 
-    const newTask = { id: `todo-${nanoid()}`, name, completed: false };
   }
   return (
     <form onSubmit={handleSubmit}>
