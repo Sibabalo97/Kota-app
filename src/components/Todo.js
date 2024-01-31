@@ -17,7 +17,10 @@ export default function Todo(props) {
   
 
 
-  const [isEditing, setEditing] = useState(false); const editingTemplate = (
+  const [isEditing, setEditing] = useState(false);
+  
+  const editingTemplate = (
+    
     <form className="stack-small"  onSubmit={handleSubmit}>
       <div className="form-group">
         <label className="todo-label" htmlFor={props.id}>
