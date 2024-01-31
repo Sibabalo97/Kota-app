@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-In the project directory, you can run:
+In the project (Kota-app\ClientServer) directory, you can run:
 
 ### `npm install`
 
