@@ -1,11 +1,15 @@
-## Initialize Go app
-go mod init github.com/Sibabalo97/go-react-todo
+# Your Go Application Name
 
-## Install Fiber v2
-go get -u github.com/gofiber/fiber/v2
+[Short description of your application.]
 
-## Create client app with Vite
-yarn create vite client -- --template react-ts
+## Quick Start
 
-## Install dependencies
-yarn add @mantine/hooks @mantine/core swr @primer/octicons-react
+### Prerequisites
+Make sure you have [Go](https://golang.org/dl/) installed on your machine.
+
+### Run the Application
+
+In the project directory, you can run:
+
+```bash
+go run main.go

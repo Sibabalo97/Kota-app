@@ -10,10 +10,10 @@ function App() {
   const styles = {
     container: {
       backgroundImage:
-        'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1ETBmdtrkmy3TZ4uy7IIK0mX1JBPslMxAA&usqp=CAU")', // Set the path to your image
+        'url("https://scontent.fcpt1-1.fna.fbcdn.net/v/t39.30808-6/302889114_381062770888851_8720314408090333185_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=wi9mUXHamuMAX_qBfoE&_nc_ht=scontent.fcpt1-1.fna&oh=00_AfBCf3o1UZBprwMReFWs1qSzvQCxZUrXgj3bMPsuJvdgCA&oe=65C08570")', // Set the path to your image
       backgroundSize: "cover", // Adjust the background size property as needed
       padding: "20px", // Add padding for better appearance
-      backgroudcolor: "black", // Set text color to be visible on the background
+      backgroundColor: "black", // Set text color to be visible on the background
     },
     link: {
       color: "green", // Set the link color to green
