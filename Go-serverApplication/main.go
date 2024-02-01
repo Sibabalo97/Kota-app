@@ -16,7 +16,7 @@ type Todo struct {
 }
 
 func main() {
-	fmt.Print("Hello world")
+	
 
 	app := fiber.New()
 
