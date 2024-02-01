@@ -18,6 +18,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+
+### `Run docker -p 3000:3000  0102c018cde6`
+and its Image & then run this command
+Run docker on you PC 
+ docker run -p 3000:3000  0102c018cde6
+
 Now, you are ready to develop your React application. Happy coding!
 
 
