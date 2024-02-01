@@ -1,10 +1,16 @@
 # Project Name
 
-[Kota-App]
+[kota-app]
+
+### `Clone GithubRepository`
+
+Clone GithubRepository using SSH Keys 
+
+GithubRepository : git@github.com:Sibabalo97/Kota-app.git
 
 ## Quick Start
 
-In the project (Kota-app\ClientServer) directory, you can run:
+In the project (Cd to kota-app) directory, you can run:
 
 ### `npm install`
 
