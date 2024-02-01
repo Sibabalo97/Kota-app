@@ -6,7 +6,7 @@
 
 Clone GithubRepository using SSH Keys 
 
-GithubRepository : git@github.com:Sibabalo97/Kota-app.git
+GithubRepository : git clone git@github.com:Sibabalo97/Kota-app.git
 
 ## Quick Start
 
